@@ -21,3 +21,25 @@ ul{
 list-style: none;
 
 }
+
+/* Header/Navbar */
+.main-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	
+}
+
+/* Logo */
+.logo{
+	width: 210px;
+	height: auto;
+}
+
+.logo img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
