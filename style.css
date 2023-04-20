@@ -11,3 +11,13 @@ body {
 	background: #000;
 	colour:#fff;
 }
+
+a{
+	text-decoration: none;
+	color:#fff;
+}
+
+ul{
+list-style: none;
+
+}
