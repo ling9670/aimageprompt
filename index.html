@@ -39,36 +39,27 @@
                               <a href="/">
                                     <h1 class="text-white text-sm select-none cursor-pointer">MidJourney Prompt Generator</h1>
                               </a>
-                              <a href="Tutorial.html" target="_blank" class="text-white text-sm select-none hover:text-white">
-                                    <button class="bg-primary-200 px-2 py-1 rounded">Tutorial</button>
-                              </a>
+                                  <a href="Tutorial.html" target="_blank" class="text-white text-sm select-none hover:text-white">
+                                        <button>Tutorial</button>
+                                  </a>
                               </div>
                         </div>
+                        
 
                         <div class="py-8 p-4 sm:px-16 max-w-6xl mx-auto flex flex-col gap-4 midjourney justify-center overflow-y-auto items-center">
                               <h2 class="mt-4 text-center">MidJourney Prompt Helper</h2>
+                                                      <div class="flex justify-center flex-col items-center">
+                              <p>Need inspiration or help?</p>
+                              <a href="Tutorial.html" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-600">Check out our guides</a>
+                        </div>
                         <div class="w-full text-black rounded-2xl  text-2xl flex justify-between">
                               <div class="flex items-center bg-neutral-500 w-full rounded-2xl ">
                                     <textarea rows="1" placeholder="Start typing your main idea..." class="bg-neutral-500 w-full text-white p-8 rounded-2xl midjourney-scrollbar min-h-[10rem]" style="resize:none"></textarea>
                               </div>
                         </div>
                         
-                        <div class="flex justify-center flex-col items-center">
-                              <p>Need inspiration or help?</p>
-                              <a href="Tutorial.html" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-600">Check out our guides</a>
-                        </div>
 
-                        <div class="w-full">
-                              <div class="flex gap-2 rounded-xl border-4 p-4 items-center bg-white">
-                                    <div class="w-full text-black rounded p-2 overflow-y-auto scrollbar">/imagine prompt: :: --v 4</div>
-                                    <button class="p-2 bg-primary-100 rounded hover:bg-primary-300 flex gap-2 items-center w-56 justify-center">Copy Prompt<!-- -->
-                                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-6 h-6 flex-shrink-0">
-                                                <path d="M7 9a2 2 0 012-2h6a2 2 0 012 2v6a2 2 0 01-2 2H9a2 2 0 01-2-2V9z"/>
-                                                <path d="M5 3a2 2 0 00-2 2v6a2 2 0 002 2V5h8a2 2 0 00-2-2H5z"/>
-                                          </svg>
-                                     </button>
-                               </div>
-                         </div>
+
                          <div class="flex gap-2 flex-wrap justify-center">
                               <div>
                                     <div data-headlessui-state>
@@ -189,6 +180,24 @@
 
             <p>If you want to exclude or avoid certain terms, type them below:</p>
             <input class="bg-neutral-500 rounded-md p-2 w-2/3 text-red-300 text-sm" placeholder="Avoid these terms.. (e.g. trees, buildings, etc.)" value>
+              <div class="w-full">
+                    <div class="flex gap-2 rounded-xl border-4 p-4 items-center bg-white">
+                          <div class="w-full text-black rounded p-2 overflow-y-auto scrollbar">/imagine prompt: :: --v 4</div>
+                          <button class="p-2 bg-primary-100 rounded hover:bg-primary-300 flex gap-2 items-center w-56 justify-center">Copy Prompt<!-- -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-6 h-6 flex-shrink-0">
+                                      <path d="M7 9a2 2 0 012-2h6a2 2 0 012 2v6a2 2 0 01-2 2H9a2 2 0 01-2-2V9z"/>
+                                      <path d="M5 3a2 2 0 00-2 2v6a2 2 0 002 2V5h8a2 2 0 00-2-2H5z"/>
+                                </svg>
+                            </button>
+                      </div>
+              </div>
+              <div class="flex justify-center">
+                <a href="https://www.midjourney.com/home/">
+                  <button type="button" class="bg-neutral-400 rounded hover:bg-neutral-500 p-2 text-neutral-100 text-sm sm:w-60">Paste On MidJourney</button>
+                </a>
+              </div>
+
+
             <div class="w-full flex justify-center align-middle">
                   <form class="flex justify-center flex-col align-middle text-center">
                         <label class="text-lg">How can we make this better?</label>
@@ -198,21 +207,18 @@
                         </div>
                   </form>
             </div>
-            <a href="/midjourney/history">
-                  <div class="flex gap-2 items-center cursor-pointer hover:opacity-60">View your prompt history<!-- --> <!-- -->
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="mt-1 h-4 w-4">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                        </svg>
-                  </div>
-            </a>
+         
 
             <div class="text-neutral-400 text-center">
                   <p>Refresh the page to clear all properties.</p>
                   <p>Bookmark this page by pressing Cmd/Ctrl + D </p>
             </div>
 
-            <div class="py-16 pb-48 bg-black w-full flex justify-center gap-8 px-8 md:px-0 flex-col items-center">
-                  <text>contact us</text>
+            <div class="py-1 w-full flex justify-center gap-1 px-8 md:px-0 flex-col items-center text-neutral-400 ">
+                  <text>| Contact us | </text>
+                  <a href="aimagineprompt.com" target="_blank" rel="noopener noreferrer" class="text-neutral-400 text-centere">
+                  <text>admin@aimagineprompt.com</text>
+                  </a>
             </div>
 
             <div style="position:fixed;z-index:9999;top:16px;left:16px;right:16px;bottom:16px;pointer-events:none"></div>
