@@ -1,130 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-*, *::before, *::after{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-body {
+.midjourney{
 	font-family: 'Lato', sans-serif;
 	background: #000;
 	colour:#fff;
 }
 
-a{
-	text-decoration: none;
-	color:#fff;
+.midjourney select{
+	height:3rem;
+	cursor:pointer;
+	border-radius:.375rem;
+	--tw-bg-opacity:1;
+	background-color:rgb(23 23 23/var(--tw-bg-opacity));
+	--tw-text-opacity:1;
+	color:rgb(255 255 255/var(--tw-text-opacity))
 }
 
-ul{
-list-style: none;
-
+.midjourney select:hover{
+	--tw-bg-opacity:1;
+	background-color:rgb(64 64 64/var(--tw-bg-opacity))
 }
 
-/* Header/Navbar */
-.main-header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: 3;
-	display: flex;
-	justify-content: space-between;
-	align-items: centre;
-	text-transform: uppercase;
-	height: 100px;
-	padding: 0 30px;
-
+.midjourney-navbar select{
+	height:.75rem;
+	width:8rem;
+	cursor:pointer;
+	border-radius:.375rem;
+	--tw-bg-opacity:1;
+	background-color:rgb(38 38 38/var(--tw-bg-opacity));
+	font-size:.875rem;
+	line-height:1.25rem;
+	--tw-text-opacity:1;
+	color:rgb(255 255 255/var(--tw-text-opacity))
 }
 
-/* Logo */
-.logo{
-	width: 100px;
-	height: auto;
+.midjourney-navbar select:hover{
+	--tw-bg-opacity:1;
+	background-color:rgb(64 64 64/var(--tw-bg-opacity))
 }
 
-.logo img{
-	display: block;
-	width: 100%;
-	height: auto;
+.midjourney-scrollbar::-webkit-scrollbar{
+	width:8px;
+	height:8px
 }
 
-/* Desktop Menu */
-.desktop-main-menu{
-	margin-right: 50px;
+.midjourney-scrollbar::-webkit-scrollbar-track{
+	z-index:50;
+	border-radius:0;
+	--tw-bg-opacity:0;
+	margin:10px 0
 }
 
-.desktop-main-menu ul{
-	display: flex;
+.midjourney-scrollbar::-webkit-scrollbar-corner{
+	background-color:transparent;
+	color:transparent
 }
 
-.desktop-main-menu ul li{
-	position: relative;
-	margin-right: 20px;
-	padding-bottom: 2px;
+.midjourney-scrollbar::-webkit-scrollbar-thumb{
+	cursor:pointer;
+	border-radius:9999px;
+	--tw-bg-opacity:1;
+	background-color:rgb(163 163 163/var(--tw-bg-opacity))
 }
 
-/* meun item bottom border */
-.desktop-main-menu ul li a::after{
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 1px;
-	background: #fff;
-	transform: scaleX(0);
-	transition: transform 0.6s cubic-bezier(0.19,1,0.22,1);
-	transform-origin: right center;
-
-
+.midjourney-scrollbar::-webkit-scrollbar-thumb:hover{
+	cursor:move;
+	--tw-bg-opacity:1;
+	background-color:rgb(163 163 163/var(--tw-bg-opacity))
 }
 
-
-.desktop-main-menu ul li a:hover::after{
-	transform: scaleX(1);
-	transform-origin: left center;
-	transition-duration: 0.4s;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.midjourney-scrollbar-canvas{overflow:overlay}
 
