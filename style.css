@@ -28,6 +28,7 @@ list-style: none;
 	top: 0;
 	left: 0;
 	width: 100%;
+	z-index: 3;
 	display: flex;
 	justify-content: space-between;
 	align-items: centre;
@@ -52,6 +53,10 @@ list-style: none;
 /* Desktop Menu */
 .desktop-main-menu{
 	margin-right: 10px;
+}
+
+.desktop-main-menu ul{
+	display: flex;
 }
 
 .desktop-main-menu ul li{
