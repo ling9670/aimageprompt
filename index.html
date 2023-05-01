@@ -1,228 +1,208 @@
 <!DOCTYPE html>
-<html>
-      <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width,initial-scale=1.0">
-            <title>MidJourney Prompt Generator</title>
-            <link rel="icon" href="icon.ico">
-            <meta name="description" content="Easily create complex Midjourney prompts.">
-            <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/noonshot-dev.appspot.com/o/midjourney%2Fimages%2F341434f9-cef9-4596-86d6-9833653385ae?alt=media&amp;token=fa80a0d3-36c0-4aa6-9042-18ce3a2e46f3">
-            <meta name="next-head-count" content="6">
-            <link rel="preload" href="style.css" as="style">
-            <link rel="stylesheet" href="style.css" data-n-g>
-            <noscript data-n-css></noscript>
-            <script defer nomodule src="js/polyfills-c67a75d1b6f99dc8.js"></script>
-            <script src="js/webpack-36d12a75f0098f30.js" defer></script>
-            <script src="js/framework-93826c5d57a3ca50.js" defer></script>
-            <script src="js/main-da8c11450ad25b1e.js" defer></script>
-            <script src="js/_app-91370cd35d3a720a.js" defer></script>
-            <script src="js/664-8af8765c6fed5950.js" defer></script>
-            <script src="js/735-52160f050bff7139.js" defer></script>
-            <script src="js/63-9f02744ade58ce4d.js" defer></script>
-            <script src="js/526-8eae0bde27acf031.js" defer></script>
-            <script src="js/index-718986b5096981d6.js" defer></script>
-            <script src="js/_buildManifest.js" defer></script>
-            <script src="js/_ssgManifest.js" defer></script>
-      </head>
+<html lang="en">
 
-      <body>
-            <div id="__next">
-                  <div>
-                        <div class="bg-neutral-700 flex items-center gap-2 justify-between p-2 px-4 midjourney-navbar w-full">
-                              <div class="logo">
-                                <a href="index.html">
-                                  <img src="img/logo.png" alt="aimagineprompt" />
-                                </a>
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="Page description" name="description">
+  <meta name="google" content="notranslate" />
 
-                              </div>
-                              <div class="flex gap-6 w-full items-center text-center">
-                              <a href="/">
-                                    <h1 class="text-white text-sm select-none cursor-pointer">MidJourney Prompt Generator</h1>
-                              </a>
-                                  <a href="Tutorial.html" target="_blank" class="text-white text-sm select-none hover:text-white">
-                                        <button>Tutorial</button>
-                                  </a>
-                              </div>
-                        </div>
-                        
-
-                        <div class="py-8 p-4 sm:px-16 max-w-6xl mx-auto flex flex-col gap-4 midjourney justify-center overflow-y-auto items-center">
-                              <h2 class="mt-4 text-center">MidJourney Prompt Helper</h2>
-                                                      <div class="flex justify-center flex-col items-center">
-                              <p>Need inspiration or help?</p>
-                              <a href="Tutorial.html" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-600">Check out our guides</a>
-                        </div>
-                        <div class="w-full text-black rounded-2xl  text-2xl flex justify-between">
-                              <div class="flex items-center bg-neutral-500 w-full rounded-2xl ">
-                                    <textarea rows="1" placeholder="Start typing your main idea..." class="bg-neutral-500 w-full text-white p-8 rounded-2xl midjourney-scrollbar min-h-[10rem]" style="resize:none"></textarea>
-                              </div>
-                        </div>
-                        
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  
+  <link href="./assets/apple-icon-180x180.png" rel="apple-touch-icon">
+  <link href="./assets/favicon.ico" rel="icon">
 
 
-                         <div class="flex gap-2 flex-wrap justify-center">
-                              <div>
-                                    <div data-headlessui-state>
-                                          <button class="min-w-[12rem] h-12 relative w-full rounded text-white py-2 px-4 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm cursor-pointer flex gap-2 justify-center items-center bg-neutral-500" type="button" aria-expanded="false" data-headlessui-state>
-                                                <div class="w-4 h-4">
-                                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/>
-                                                      </svg>
-                                                </div>
 
-                                                <span class>Size</span>
-                                          </button>
-                                    </div>
-                              </div>
-                              <div>
-                                    <div class="relative">
-                                          <button class="min-w-[12rem] h-12 relative w-full rounded text-white py-2 px-4 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm cursor-pointer bg-neutral-500" id="headlessui-listbox-button-:R38ar6:" type="button" aria-haspopup="listbox" aria-expanded="false" data-headlessui-state>
-                                                <div class="flex gap-2 justify-center items-center">
-                                                      <div class="flex-shrink-0 h-4 w-4">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
-                                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
-                                                            </svg>
-                                                      </div>
-                                                      <span class="block">Depth of Field</span>
+  <title>AI Image[Free Download]</title>  
 
-                                                </div>
-                                          </button> 
-                                    </div>
-                              </div>
-                              <div>
-                              <div class="relative">
-                                    <button class="min-w-[12rem] h-12 relative w-full rounded text-white py-2 px-4 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm cursor-pointer bg-neutral-500" id="headlessui-listbox-button-:R39ar6:" type="button" aria-haspopup="listbox" aria-expanded="false" data-headlessui-state>
-                                          <div class="flex gap-2 justify-center items-center">
-                                                <div class="flex-shrink-0 h-4 w-4">
-                                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-                                                      </svg>
-                                                </div>
-                                                <span class="block">Quality</span>
-                                          </div>
-                                    </button>
-                              </div>
-                        </div>
+<link href="style.css" rel="stylesheet"></head>
 
-                        <div>
-                              <div class="relative">
-                                    <button class="min-w-[12rem] h-12 relative w-full rounded text-white py-2 px-4 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm cursor-pointer bg-neutral-500" id="headlessui-listbox-button-:R3aar6:" type="button" aria-haspopup="listbox" aria-expanded="false" data-headlessui-state>
-                                          <div class="flex gap-2 justify-center items-center">
-                                                <div class="flex-shrink-0 h-4 w-4">
-                                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
-                                                      </svg>
-                                                </div>
-                                                <span class="block">Stylize</span>
-                                          </div>
-                                    </button>
-                              </div>
-                        </div>
+<body>
 
-                        <div>
-                              <div class="relative">
-                                    <button class="min-w-[12rem] h-12 relative w-full rounded text-white py-2 px-4 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm cursor-pointer bg-neutral-500" id="headlessui-listbox-button-:R3bar6:" type="button" aria-haspopup="listbox" aria-expanded="false" data-headlessui-state>
-                                          <div class="flex gap-2 justify-center items-center">
-                                                <div class="flex-shrink-0 h-4 w-4">
-                                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
-                                                      </svg>
-                                                </div>
-                                                <span class="block">Version 4</span>
-                                          </div>
-                                    </button>
-                              </div>
-                        </div>
-                        <div>
-                              <div data-headlessui-state>
-                                    <button class="min-w-[12rem] h-12 relative w-full rounded text-white py-2 px-4 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm cursor-pointer flex gap-2 justify-center items-center bg-neutral-500" type="button" aria-expanded="false" data-headlessui-state>
-                                          <div class="w-4 h-4">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                                      <path d="M7.707 10.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V6h5a2 2 0 012 2v7a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2h5v5.586l-1.293-1.293zM9 4a1 1 0 012 0v2H9V4z"/>
-                                                </svg>
-                                          </div>
-                                          <span class>Seed</span>
-                                    </button>
-                              </div>
-                        </div>
+<!-- Add your content of header -->
+<header class="">
+  <div class="navbar navbar-default visible-xs">
+    <button type="button" class="navbar-toggle collapsed">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a href="./index.html" class="navbar-brand">AI Stock Photo</a>
+  </div>
 
-                        <div>
-                              <div data-headlessui-state>
-                                    <button class="min-w-[12rem] h-12 relative w-full rounded text-white py-2 px-4 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm cursor-pointer flex gap-2 justify-center items-center bg-neutral-500" type="button" aria-expanded="false" data-headlessui-state>
-                                          <div class="w-4 h-4">
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                                </svg>
-                                          </div>
-                                          <span class>Chaos</span>
-                                    </button>
-                              </div>
-                        </div>
+  <nav class="sidebar">
+    <div class="navbar-collapse" id="navbar-collapse">
+      <div class="site-header hidden-xs">
+          <a class="site-brand" href="./index.html" title="">
+            <img class="img-responsive site-logo" alt="" src="./assets/images/mashup-logo.svg">
+            AI photo
+          </a>
+        <p>Free Download of AI Image.</p>
+      </div>
+      <ul class="nav">
+        <li><a href="./index.html" title="">Home</a></li>
+        <li><a href="./services.html" title="">Services</a></li>
+        <li><a href="./contact.html" title="">Contact</a></li>
 
-                        <style data-emotion="css 4xx2wk">.css-4xx2wk{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;appearance:none;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;position:relative;white-space:nowrap;vertical-align:middle;outline:2px solid transparent;outline-offset:2px;}
-                        </style>
+      </ul>
 
-                        <button type="button" class="chakra-button bg-red-600 px-4 rounded cursor-pointer h-12 css-4xx2wk">Clear all<!-- --></button>
-            </div>
-            <div class="flex gap-4">
-                  <div class="bg-neutral-500 w-64 rounded flex flex-col">
-                        <div class="flex justify-between items-center cursor-pointer p-4 hover:bg-primary-100 rounded-md">
-                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="w-4 h-4">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/>
-                              </svg>
-                              <p>Upload Inspiration Image</p>
-                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="h-4 w-4">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-                              </svg>
-                        </div>
-                  </div>
-            </div>
+      <nav class="nav-footer">
+        <p class="nav-footer-social-buttons">
+          <a class="fa-icon" href="https://www.instagram.com/" title="">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a class="fa-icon" href="https://dribbble.com/" title="">
+            <i class="fa fa-dribbble"></i>
+          </a>
+          <a class="fa-icon" href="https://twitter.com/" title="">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </p>
+        <p>© AI Image Prompt | Website created with <a href="https://www.aimageprompt.com/" title="Website with free AI images and tutorials">Free AI Images</a></p>
+      </nav>  
+    </div> 
+  </nav>
+</header>
+<main class="" id="main-collapse">
 
-            <p>If you want to exclude or avoid certain terms, type them below:</p>
-            <input class="bg-neutral-500 rounded-md p-2 w-2/3 text-red-300 text-sm" placeholder="Avoid these terms.. (e.g. trees, buildings, etc.)" value>
-              <div class="w-full">
-                    <div class="flex gap-2 rounded-xl border-4 p-4 items-center bg-white">
-                          <div class="w-full text-black rounded p-2 overflow-y-auto scrollbar">/imagine prompt: :: --v 4</div>
-                          <button class="p-2 bg-primary-100 rounded hover:bg-primary-300 flex gap-2 items-center w-56 justify-center">Copy Prompt<!-- -->
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-6 h-6 flex-shrink-0">
-                                      <path d="M7 9a2 2 0 012-2h6a2 2 0 012 2v6a2 2 0 01-2 2H9a2 2 0 01-2-2V9z"/>
-                                      <path d="M5 3a2 2 0 00-2 2v6a2 2 0 002 2V5h8a2 2 0 00-2-2H5z"/>
-                                </svg>
-                            </button>
-                      </div>
-              </div>
-              <div class="flex justify-center">
-                <a href="https://www.midjourney.com/home/">
-                  <button type="button" class="bg-neutral-400 rounded hover:bg-neutral-500 p-2 text-neutral-100 text-sm sm:w-60">Paste On MidJourney</button>
-                </a>
-              </div>
+<!-- Add your site or app content here -->
+ 
+<div class="hero-full-wrapper">
+  <div class="grid">
+  <div class="gutter-sizer"></div>
+    <div class="grid-sizer"></div>
+    
+    <div class="grid-item">
+      <img class="img-responsive" alt="" src="./assets/images/img-12.jpg">
+      <a href="./project.html" class="project-description">
+        <div class="project-text-holder">
+          <div class="project-text-inner">
+            <h3>HUMAN</h3>
+            <p>Discover more</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    
+    <div class="grid-item">
+      <img class="img-responsive" alt="" src="./assets/images/img-05.jpg">
+      <a href="./project.html" class="project-description">
+        <div class="project-text-holder">
+          <div class="project-text-inner">
+            <h3>FANTASY</h3>
+            <p>Discover more</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="grid-item">
+      <img class="img-responsive" alt="" src="./assets/images/img-13.jpg">
+      <a href="./project.html" class="project-description">
+        <div class="project-text-holder">
+          <div class="project-text-inner">
+            <h3>HOME DESIGN</h3>
+            <p>Discover more</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="grid-item">
+      <img class="img-responsive" alt="" src="./assets/images/img-04.jpg">
+      <a href="./project.html" class="project-description">
+        <div class="project-text-holder">
+          <div class="project-text-inner">
+            <h3>DREAMING</h3>
+            <p>Discover more</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    
+    <div class="grid-item">
+      <img class="img-responsive" alt="" src="./assets/images/img-07.jpg">
+      <a href="./project.html" class="project-description">
+        <div class="project-text-holder">
+          <div class="project-text-inner">
+            <h3>SXXY</h3>
+            <p>Discover more</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="grid-item">
+      <img class="img-responsive" alt="" src="./assets/images/img-11.jpg">
+      <a href="./project.html" class="project-description">
+        <div class="project-text-holder">
+          <div class="project-text-inner">
+            <h3>ANIMAL</h3>
+            <p>Discover more</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="grid-item">
+      <img class="img-responsive" alt="" src="./assets/images/img-10.jpg">
+      <a href="./project.html" class="project-description">
+        <div class="project-text-holder">
+          <div class="project-text-inner">
+            <h3>GAMING IDEA</h3>
+            <p>Discover more</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="grid-item">
+      <img class="img-responsive" alt="" src="./assets/images/img-03.jpg">
+      <a href="./project.html" class="project-description">
+        <div class="project-text-holder">
+          <div class="project-text-inner">
+            <h3>ART</h3>
+            <p>Discover more</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    
+  </div>
+</div>
 
 
-            <div class="w-full flex justify-center align-middle">
-                  <form class="flex justify-center flex-col align-middle text-center">
-                        <label class="text-lg">How can we make this better?</label>
-                        <div class="flex flex-col sm:flex-row gap-4">
-                              <textarea class="bg-neutral-500 rounded-md p-2 w-full text-sm text-center h-min" placeholder="Any feedback is appreciated!"></textarea>
-                              <button type="submit" class="bg-neutral-400 rounded hover:bg-neutral-500 p-2 text-neutral-100 text-sm sm:w-60">Submit Feedback</button>
-                        </div>
-                  </form>
-            </div>
-         
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+     masonryBuild();
+  });
+</script>
 
-            <div class="text-neutral-400 text-center">
-                  <p>Refresh the page to clear all properties.</p>
-                  <p>Bookmark this page by pressing Cmd/Ctrl + D </p>
-            </div>
+</main>
 
-            <div class="py-1 w-full flex justify-center gap-1 px-8 md:px-0 flex-col items-center text-neutral-400 ">
-                  <text>| Contact us | </text>
-                  <a href="aimagineprompt.com" target="_blank" rel="noopener noreferrer" class="text-neutral-400 text-centere">
-                  <text>admin@aimagineprompt.com</text>
-                  </a>
-            </div>
+<script>
+document.addEventListener("DOMContentLoaded", function (event) {
+  navbarToggleSidebar();
+  navActivePage();
+});
+</script>
 
-            <div style="position:fixed;z-index:9999;top:16px;left:16px;right:16px;bottom:16px;pointer-events:none"></div>
-            </div>
-            <script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/","query":{},"buildId":"FUryXDoY3FfGSjk3hPlPv","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}</script>
-      </body>
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
+
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-XXXXX-X', 'auto');
+  ga('send', 'pageview');
+</script>
+
+--><script type="text/javascript" src="script.js"></script></body>
+
 </html>
